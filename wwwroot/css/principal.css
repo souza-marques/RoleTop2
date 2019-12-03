@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+#logo-area img {
+  max-width: 100%;
+}
+  .section-local {
+    text-align: center;
+    color: #ffc600;
+  }
+  
+  .box-serviços { 
+    color: #ffc600;
+   text-align: center;
+   font-size: 1.5em;
+   margin: auto;
+  } 
+  .box-serviços p {
+    text-align: justify;
+    margin: auto;
+    margin-left: 40%;
+    max-width: 50%;
+  }
+  .box-name> h3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .box-história { color: #ffc600;
+   text-align: center;
+   font-size: 1.5em;
+   margin: auto;
+  }
+  .box-história p { 
+    text-align: justify;
+    margin: auto;
+    margin-left: 25%;
+    max-width: 50%;
+  }
+  .box-planta {
+    color: #ffc600;
+    text-align: center;
+  }
+  .box-planta h3{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  #local h3 {
+    color: #ffc600;
+    text-align: center;
+  }
+  .box-frase>h2 {
+    text-align: center;
+    background-color:#ffc600;
+  }
+    body hr {
+      color: #ffc600;
+    }
+    
+  
+  /**********************************************************************
+                                  LOGO
+  ***********************************************************************/
+  #logo-area  img { background-image: url(img/fundo_logo.jpg);
+    width: 100%;
+    
+  }
+  #logo-area h2 {color: #ff9933;
+    text-shadow: -2px -2px 0 #ffc600,
+    2px -2px 0 #ffc600
+   -2px  2px 0 #ffc600
+    2px  2px 0 #ffc600;
+   align-items: center;
+  }
+  #logo-area hgroup {
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*********************************************************************
+                          RESPONSIVIDADE
+  *********************************************************************/
+  @media(max-width: 1360px){
+    .box-serviços p {
+      margin-left: 30%;
+    }
+  }
+  @media(max-width: 1000px){
+    .box-serviços p {
+      margin-left: 25%;
+    }
+  }
+  @media(max-width: 700px){
+    .box-serviços { 
+     font-size: 0.9em;
+    } 
+    .box-serviços p {
+      margin-left: 20%;
+      max-width: 80%;
+    }
+    .box-planta h3{
+      text-align: center;
+      font-size: 0.9em;
+    }
+    .box-história {
+      font-size: 0.9em;
+     }
+     .box-história p {
+      margin-left: 10%;
+      max-width: 80%;
+    }
+    .box-frase h2{
+      font-size: 0.9em;
+    }
+  }   
+  @media(max-width: 535px){
+    .box-serviços p {
+      margin-left: 15%;
+    }
+  }
+  @media(max-width: 320px){
+    
+  }                 
+   

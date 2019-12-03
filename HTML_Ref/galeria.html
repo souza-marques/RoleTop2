@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rolê Top-Galeria</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/galeria.css" type="text/css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/logo roletop.png" class="imgg" alt="logotipo" title="Rolê-top " />
+        <nav>
+            <div class="section-container">
+                
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                <i class="fa fa-bars"></i>
+                            
+                            <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="principal.html"
+                                class="active">Principal</a></li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                    href="principal.html#historia">História</a></li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="galeria.html">Galeria</a></li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">Cadastro/Login</a>
+                                    </li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="principal.html#servicos">Serviços</a></li>
+                                    <li><a id="bt-peca_ja" href="orçamento.html"><strong>Faça seu Evento</strong></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        
+    </header>
+
+    <main>
+        <div class="galeria">
+            <h1>Galeria</h1>
+        </div>
+        <br>
+            <div class="section-fotos">
+
+                    <ul>
+                      <li><h3>Casamentos</h3>
+                        <img src="img/casamento.jpg" alt="Casamento" />
+                      </li>
+                      <li> <h3>Shows</h3>
+                        <img src="img/show de rock.jpg" alt="show de rock" />
+                      </li>
+                      <li>
+                        <h3>Aniversários</h3>
+                        <img src="img/aniversário.jpg" alt="aniversários" />
+                      </li>
+                      <li><h3>Workshops</h3>
+                        <img src="img/workshops.jpg" alt="workshop" />
+                      </li>
+                      <li><h3>Festas de 15 anos</h3>
+                        <img src="img/festa de 15.jpg" alt="festa de debutante" />
+                      </li>
+                      <li><h3>Baladas</h3>
+                        <img src="img/festas.jpg" alt="baladas" />
+                      </li>
+                    </ul>
+                  </div>
+    </main>
+    <hr>
+    <footer>
+        <div class="section-local">
+            <address>
+                <d1>
+                    <dt><strong>Endereço :</strong></dt>
+                    <dd>Alameda Barão de Limeira, 539 - Santa Cecilia, São Paulo - SP, 01202-001</dd>
+                    <dt><strong>Telefone:</strong></dt>
+                    <dd>(11) 3273-5000</dd>
+                </d1>
+                <dt><strong>E-mail:</strong></dt>
+                <dd>rolêtop@gmail.com</dd>
+            </address>
+            <a href="#">Voltar para o topo!</a>
+        </div>
+    </footer>
+
+    <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-times");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-times");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }
+            
+        </script>
+
+
+</body>
+
+</html>

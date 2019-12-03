@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <link rel="stylesheet" href="css/style-form-pages.css" type="text/css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo roletop.png" class="imgg" alt="logotipo" title="Rolê-top " />
+        <nav>
+            <div class="section-container">
+                
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                            
+                            <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="principal.html"
+                                class="active">Principal</a></li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                    href="principal.html#historia">História</a></li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="galeria.html">Galeria</a></li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">Cadastro/Login</a>
+                                    </li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                        href="principal.html#servicos">Serviços</a></li>
+                                        <li><a id="bt-peca_ja" href="orçamento.html"><strong>Faça seu Evento</strong></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            
+                        </header>
+                        <title>Rolê top /Login</title>
+                        <hr>
+                        
+                        <main>
+                            <h2>Login de Usuário</h2>
+                            <form method="GET" action="principal.html">
+                                <div>
+                                    <label for="email">E-mail:</label>
+                                    <br />
+                                    <input id="email" type="email" />
+                                </div>
+                                <div>
+                                    <label for="senha">Senha:</label>
+                                    <br />
+                                    <input id="senha" type="password" /><br>
+                                    <input type="submit" value="Entrar" onclick="alert('Parabéns,você está logado!')"/>
+                                </div>
+                                <br>
+                                <br>
+                            </form>
+                            <form method="GET" action="dashboard.html">
+                                <div>
+                                    <h2>Login de administrador</h2>
+                                    <label for="Nome do adiministrador"> Nome administrador:</label>
+                                    <br>
+                                    <input id="Nome do administrador" type="Nome" />
+                                </div>
+                                <div>
+                                    <label for="Código de verificação">Código de verificação do administrador:</label>
+                                    <br>
+                                    <input id="Código de verificação" type="number">
+                                </div>
+                                
+                                <div>
+                                    <label for="password">Senha:</label>
+                                    <br>
+                                    <input id="senha" type="password" /><br>
+                                    <input type="submit" value="Entrar" />
+                                </div>
+                                <br>
+                                <br>
+                            </form>
+                            <form method="GET" action="principal.html">
+                                
+                                <h2>Cadastro</h2>
+                                <div>
+                                    <label for="Nome">Nome Completo:</label>
+                                    <br>
+                                    <input id="nome ca" type="text" />
+                                </div>
+                                <div>
+                                    <label for="CPF ou CNPJ">CPF ou CNPJ</label>
+                                    <br>
+                                    <input id="CPF/CNPJ ca" type="number" />
+                                </div>
+                                <div>
+                                    <label for="E-mail">E-mail:</label>
+                                    <br>
+                                    <input id="E-mail ca" type="email" />
+                                </div>
+                                <div>
+                                    <label for="Senha">Senha:</label>
+                                    <br>
+                                    <input id="senha ca" type="password" />
+                                </div>
+                                <div>
+                                    <label for="Confirmação de senha">Confirmação de Senha:</label>
+                                    <br>
+                                    <input id="Confirmação de senha ca" type="text" /><br>
+                                    <input type="submit" value="Cadastrar" />
+                                </div>
+                                <br>
+                                <br>
+                            </form>
+                        </main>
+                        <hr>
+                        <div class="rodape">
+                            <footer>
+                                <address>
+                                    <d1>
+                                        <dt><strong>Endereço :</strong></dt>
+                                        <dd>Alameda Barão de Limeira, 539 - Santa Cecilia, São Paulo - SP, 01202-001</dd>
+                                        <dt><strong>Telefone:</strong></dt>
+                                        <dd>(11) 3273-5000</dd>
+                                    </d1>
+                                    <dt><strong>E-mail:</strong></dt>
+                                    <dd>rolêtop@gmail.com</dd>
+                                </address>
+                            </footer>
+                        </div>
+                        <script>
+                            function toggleMobileMenu() {
+                                var ul = document.querySelector("nav ul");
+                                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                                var icon = document.querySelector(".icon > i");
+                                
+                                ul.classList.toggle("mobile-mode");
+                                
+                                if (icon.classList.contains("fa-bars")) {
+                                    icon.classList.remove("fa-bars");
+                                    icon.classList.remove("fa");
+                                    
+                                    icon.classList.add("fas");
+                                    icon.classList.add("fa-times");
+                                } else {
+                                    icon.classList.remove("fas");
+                                    icon.classList.remove("fa-times");
+                                    
+                                    icon.classList.add("fa");
+                                    icon.classList.add("fa-bars");
+                                }
+                                
+                                for (var button of commonButtons) {
+                                    button.classList.toggle("active");
+                                }
+                                
+                            }
+                            
+                        </script>
+                        
+                        
+                        
+                        
+                        
+                    </body>
+                    
+                    </html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rolê Top-espaço para eventos </title>
+    <link rel="icon" href="img/logo roletop.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/principal.css" type="text/css">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo roletop.png" class="imgg" alt="logotipo" title="Rolê-top " />
+        <nav>
+            <div class="section-container">
+                
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                            
+                            <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="principal.html"
+                                class="active">Principal</a></li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                    href="principal.html#historia">História</a></li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="galeria.html">Galeria</a></li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login.html">Cadastro/Login</a>
+                                    </li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="principal.html#servicos">Serviços</a></li>
+                                    <li><a id="bt-peca_ja" href="orçamento.html"><strong>Faça seu Evento</strong></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        
+                    </header>
+                    <main>
+                        <div class="box-frase">
+                            <h2>Venha fazer seu evento conosco !</h2>
+                        </div>
+                        
+                        <section id="logo-area" >
+                            <img src="img/festa.jpg" alt="logotipo rolê top"/>
+                        </section>
+
+                    
+                            
+                            <div class="box-serviços">
+                                
+                                        <h3>Serviços e infraestrutura</h3> 
+                                        <br>
+                                        
+                                        <p>
+                                        -Área total:150x40 m<br>
+                                        -serviço de limpeza,<br>
+                                        -serviço de áudio<br>
+                                        -sistema de climatização<br>
+                                        -capacidade máxima de 400 pessoas<br>
+                                        -estacionamento<br>
+                                        -entrada para deficientes<br>
+                                        -camarins<br>
+                                    </p>
+                                        
+                                <br>
+                                <br>
+                                <hr>
+                                <br>
+                            </div>
+                            <div class="box-planta">
+                                <p><h3>Planta Baixa</h3></p>
+                                <br>
+                                <img src="img/planta baixa.jpg" width="30%" height="100%" frameborder="0"> 
+                        </div>
+                        </section>
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <section id="historia">
+                            
+                            <div class="box-história">
+                    
+                                    <h3>História</h3> 
+                                    <br>
+                                    <p>
+                                        O Rolê Top foi fundado em 2015,pelos amigos Cesar Spotore e Alexandre Fukaya.
+                                        Juntos tiveram a brilhante ideia de desenvolver um galpão para atender a      
+                                        necessidade de criação de diversos tipos  de eventos, e desde então buscam o melhor 
+                                        atendimento a sua necessidade. Localizado na Santa Cecília, Zona Central de São Paulo,
+                                        O Rolê Top dispõe de um local com uma ótima infraestrutura que realiza  eventos como: 
+                                        Casamentos, shows, baladas ,aniversários, workshops e muito mais.
+                                    </p>
+                                </div>
+                            </section>
+                            <br>
+                            <br>
+                            <hr>
+                            <br>
+                            <br>
+                            <section id="local">
+                                <div class="mapa">
+                                    <h3>Veja nossa localização:</h3>
+                                    <br>
+                                    <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
+                                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </section>
+                            <hr>
+                        </main>
+                        <footer>
+                            <div class="section-local">
+                                <address>
+                                    <d1>
+                                        <dt><strong>Endereço :</strong></dt>
+                                        <dd>Alameda Barão de Limeira, 539 - Santa Cecilia, São Paulo - SP, 01202-001</dd>
+                                        <dt><strong>Telefone:</strong></dt>
+                                        <dd>(11) 3273-5000</dd>
+                                    </d1>
+                                    <dt><strong>E-mail:</strong></dt>
+                                    <dd>rolêtop@gmail.com</dd>
+                                </address>
+                                <a href="#">Voltar para o topo!</a>
+                            </div>
+                        </footer>
+                        
+                        <script>
+                            function toggleMobileMenu() {
+                                var ul = document.querySelector("nav ul");
+                                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                                var icon = document.querySelector(".icon > i");
+                                
+                                ul.classList.toggle("mobile-mode");
+                                
+                                if (icon.classList.contains("fa-bars")) {
+                                    icon.classList.remove("fa-bars");
+                                    icon.classList.remove("fa");
+                                    
+                                    icon.classList.add("fas");
+                                    icon.classList.add("fa-times");
+                                } else {
+                                    icon.classList.remove("fas");
+                                    icon.classList.remove("fa-times");
+                                    
+                                    icon.classList.add("fa");
+                                    icon.classList.add("fa-bars");
+                                }
+                                
+                                for (var button of commonButtons) {
+                                    button.classList.toggle("active");
+                                }
+                                
+                            }
+                            
+                        </script>
+                        
+                        
+                    </body>
+                    
+                    </html>

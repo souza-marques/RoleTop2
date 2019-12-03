@@ -1,0 +1,111 @@
+﻿@model RoleTopMVC.ViewModels.BaseViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rolê Top-espaço para eventos </title>
+    <link rel="icon" href="~/img/logo roletop.png" type="image/x-icon">
+    <link rel="stylesheet" href="~/css/style.css" type="text/css">
+    <link rel="stylesheet" href="~/css/principal.css" type="text/css">
+
+    @if("Galeria".Equals(@Model.NomeView))
+    {
+          <link rel="stylesheet" href="~/css/galeria.css" type="text/css">
+    }
+    @if("Orcamento".Equals(@Model.NomeView))
+    {
+         <link rel="stylesheet" href="~/css/orçamento.css" type="text/css">
+    }@if("Cliente".Equals(@Model.NomeView))
+    {
+        <link rel="stylesheet" href="~/css/login.css" type="text/css">
+    }@if("Cadastro".Equals(@Model.NomeView))
+    {
+         <link rel="stylesheet" href="~/css/login.css" type="text/css">
+    }@if("Login".Equals(@Model.NomeView))
+    {
+         <link rel="stylesheet" href="~/css/login.css" type="text/css">
+    }
+
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="~/img/logo roletop.png" class="imgg" alt="logotipo" title="Rolê-top " />
+        <nav>
+            <div class="section-container">
+                
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                            
+                            <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index"
+                                class="active">Principal</a></li>
+                                <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
+                                    href='@Url.Action("Index","Home")#historia'>História</a></li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller = "Galeria" asp-action="Fotos">Galeria</a></li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()"asp-controller = "Cliente" asp-action="Login">Cadastro/Login</a>
+                                    </li>
+                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index","Home")#servicos'>Serviços</a></li>
+                                    <li><a id="bt-peca_ja" asp-controller="Orcamento" asp-action="CadastroEventos">Faça seu Evento</strong></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        
+                    </header>
+ @RenderBody()
+         <footer>
+                            <div class="section-local">
+                                <address>
+                                    <d1>
+                                        <dt><strong>Endereço :</strong></dt>
+                                        <dd>Alameda Barão de Limeira, 539 - Santa Cecilia, São Paulo - SP, 01202-001</dd>
+                                        <dt><strong>Telefone:</strong></dt>
+                                        <dd>(11) 3273-5000</dd>
+                                    </d1>
+                                    <dt><strong>E-mail:</strong></dt>
+                                    <dd>rolêtop@gmail.com</dd>
+                                </address>
+                                <a href="#">Voltar para o topo!</a>
+                            </div>
+                        </footer>
+                        
+                        <script>
+                            function toggleMobileMenu() {
+                                var ul = document.querySelector("nav ul");
+                                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                                var icon = document.querySelector(".icon > i");
+                                
+                                ul.classList.toggle("mobile-mode");
+                                
+                                if (icon.classList.contains("fa-bars")) {
+                                    icon.classList.remove("fa-bars");
+                                    icon.classList.remove("fa");
+                                    
+                                    icon.classList.add("fas");
+                                    icon.classList.add("fa-times");
+                                } else {
+                                    icon.classList.remove("fas");
+                                    icon.classList.remove("fa-times");
+                                    
+                                    icon.classList.add("fa");
+                                    icon.classList.add("fa-bars");
+                                }
+                                
+                                for (var button of commonButtons) {
+                                    button.classList.toggle("active");
+                                }
+                                
+                            }
+                            
+                        </script>
+                        
+                        
+                    </body>
+                    
+                    </html>

@@ -1,0 +1,117 @@
+body{
+    background-color: #7d0093;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+main h2 { background-color: #ffc600;
+}
+
+#painel {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    padding: 0.5em 0;
+    font-size: 1.3em;
+    color: #361a0c;
+    text-shadow: 
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+   -1px  1px 0 #fff,
+    1px  1px 0 #fff;
+}
+
+h4 {
+    font-size: 2em;
+    font-family: 'Fredoka One', cursive;
+}
+
+.box-status-pedidos {
+    width: 30%;
+    padding-top: .5em;
+    text-align: center;
+}
+.box-status-pedidos > p {
+    font-size: 2em;
+    padding: 0.5em 0 0 0;
+}
+
+.box-status-pedidos.reprovados {
+    background-color: #a70000;
+}
+
+.box-status-pedidos.aprovados {
+    background-color: #669100;
+}
+
+.box-status-pedidos.pendentes {
+    background-color: #ff9933;
+}
+
+table {
+    text-align: center;
+    color: #fff;
+    border: 1px dashed #ff9933;
+    width: 100%;
+    padding: 5px;
+    word-break: normal;
+}
+
+table th {
+    background-color:#a70000;
+}
+
+table a {
+    text-decoration: none;
+    color: #ff9933;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+tfoot td {
+    text-align: center;
+    color: #ff9933;
+    background-color: #a70000;
+}
+
+thead > tr:first-child > th:last-child {
+    padding: 0 .5em;
+}
+
+.section-container { 
+    text-align: center;
+    color:#ffc600;
+
+}
+@media(max-width: 1360px){
+
+}
+@media(max-width: 1000px){
+  
+}
+@media(max-width: 700px){
+    main {
+        width: 90%;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+}   
+@media(max-width: 535px){
+  
+}
+@media(max-width: 320px){
+  
+}

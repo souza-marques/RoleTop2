@@ -1,0 +1,40 @@
+main {
+    color: #ffc600;
+    text-align: center;
+}
+.rodape { text-align: center;
+    color: #ffc600;
+}
+hr {
+    color: #ffc600;
+}
+ main h2{
+     background-color: #ffc600;
+     color:  #7d0093;
+ }
+ form input{
+     width: 30%;
+ }
+ form input[type="submit"]{
+     width: 10%
+ }
+ @media(max-width: 1360px){
+
+}
+@media(max-width: 1000px){
+  
+}
+@media(max-width: 700px){
+  
+}   
+@media(max-width: 535px){
+    form input{
+        width: 50%;
+    }
+    form input[type="submit"]{
+        width: 20%
+    }
+}
+@media(max-width: 320px){
+  
+}
