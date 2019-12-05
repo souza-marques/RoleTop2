@@ -5,10 +5,12 @@ namespace RoleTopMVC.Controllers
 {
     public class AbstractController : Controller
     {
-      protected const string SESSION_CLIENTE_EMAIL = "SESSION_CLIENTE_EMAIL";
-      protected const string SESSION_CLIENTE_NOME = "cliente_nome";
-      protected const string SESSION_TIPO_USUARIO = "SESSION_TIPO_USUARIO";
-      protected string ObterUsuarioSession()
+         protected const string SESSION_CLIENTE_EMAIL = "SESSION_CLIENTE_EMAIL";
+            
+         protected const string SESSION_CLIENTE_NOME = "cliente_nome";
+         protected const string SESSION_TIPO_USUARIO = "SESSION_TIPO_USUARIO";
+         
+         protected string ObterUsuarioSession()
       {
            var email = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);//onde voce guarda valores string 
            if (!string.IsNullOrEmpty(email))

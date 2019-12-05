@@ -6,6 +6,8 @@ namespace RoleTopMVC.ViewModels
     {
         public Cliente Cliente {get;set;}
 
+        public string NomeUsuario {get;set;}
+
         public OrcamentoViewModel()
         {
             this.Cliente = new Cliente();

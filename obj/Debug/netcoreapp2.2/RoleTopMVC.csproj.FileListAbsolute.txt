@@ -48,7 +48,6 @@ C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\RoleTopMVC.Raz
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Galeria\Fotos.g.cshtml.cs
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
-C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Orcamento\CadastroEventos.g.cshtml.cs
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
@@ -64,3 +63,5 @@ C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Sh
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Sucesso.g.cshtml.cs
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cadastro\Index.g.cshtml.cs
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Login.g.cshtml.cs
+C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Orcamento\Index.g.cshtml.cs
+C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Historico.g.cshtml.cs

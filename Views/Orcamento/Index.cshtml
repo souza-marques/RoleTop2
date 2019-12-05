@@ -1,9 +1,11 @@
- <main>
-                        
+ @model RoleTopMVC.ViewModels.OrcamentoViewModel
+
+ <main>  
                         <h2>Faça sua Reserva!</h2>
                         <br>
                         <br>
-                        <form method="GET" action="orçamento.html">
+                        <form method="POST" action='@Url.Action("Registrar","Orcamento")'>
+
                             <div class="in-esquerda">
                                 <div>
                                     <label for="Nome do evento"> Nome do Evento:</label>
@@ -83,13 +85,12 @@
                                     <h3>Observações de cancelamento:</h3><p>O cancelamento pode ser feito com até 3 dias de antecedência do evento.<br>
                                         Caso contrário, o indivíduo terá de pagar metade do aluguel do local.</p>
                                     </div>
-                        </form>  
-                        <form method="GET" action="principal.html">
                             <div class="fim">
-                                <input type="submit" value="Finalizar"  />
+                                <input type="submit" value="Finalizar"/>
                             </div>                
-                        </form>
+                    
                                 
 
                                 
+                        </form>
                             </main>

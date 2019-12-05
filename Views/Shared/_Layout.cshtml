@@ -49,10 +49,19 @@
                                 <li class="bt-common-menu"><a onclick="toggleMobileMenu()"
                                     href='@Url.Action("Index","Home")#historia'>História</a></li>
                                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller = "Galeria" asp-action="Fotos">Galeria</a></li>
-                                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()"asp-controller = "Cliente" asp-action="Login">Cadastro/Login</a>
+                     
                                     </li>
                                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index","Home")#servicos'>Serviços</a></li>
-                                    <li><a id="bt-peca_ja" asp-controller="Orcamento" asp-action="CadastroEventos">Faça seu Evento</strong></a></li>
+                                     @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
+                    { <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>}
+                    else
+                    {
+                         <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Logoff">Loggof</a></li>
+                         
+                          <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Historico">Historico</a></li>
+                    }
+                   
+                                    <li><a id="bt-peca_ja" asp-controller="Orcamento" asp-action="Index">Faça seu Evento</strong></a></li>
                                 </ul>
                             </div>
                         </nav>

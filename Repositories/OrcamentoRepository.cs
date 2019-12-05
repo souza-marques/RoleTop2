@@ -31,7 +31,7 @@ namespace RoleTopMVC.Repositories
           public List<Orcamento> ObterTodos()
                 {
                      var linhas = File.ReadAllLines(PATH);
-                     List<Orcamento> orcamentos= new List<Orcamento>();
+                     List<Orcamento> orcamentos = new List<Orcamento>();
                      foreach(var linha in linhas )
                      {
                          Orcamento orcamento = new Orcamento();
