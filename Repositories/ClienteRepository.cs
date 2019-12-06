@@ -26,8 +26,8 @@ namespace RoleTopMVC.Repositories
             foreach ( var linha in linhas) { 
                 if(ExtrairValorDoCampo("email", linha).Equals (email)){
                     Cliente c = new Cliente ();
-                     c.Nome = ExtrairValorDoCampo ("nomeCompleto", linha);
-                     c.Cpf =  ExtrairValorDoCampo ("documento", linha);
+                     c.Nome = ExtrairValorDoCampo ("nome", linha);
+                     c.Cpf =  ExtrairValorDoCampo ("cpf", linha);
                      c.Senha = ExtrairValorDoCampo ("senha", linha);
                      c.Email = ExtrairValorDoCampo ("email", linha);
                     
@@ -46,8 +46,8 @@ namespace RoleTopMVC.Repositories
             var indiceChave = linha.IndexOf (chave);
             var indiceTerminal = linha.IndexOf(";", indiceChave);
             var valor = "";
-           
-             if (indiceTerminal != -1) {
+    
+            if (indiceTerminal != -1) {
                 valor = linha.Substring (indiceChave, indiceTerminal - indiceChave);
             } else {
                 valor = linha.Substring (indiceChave);

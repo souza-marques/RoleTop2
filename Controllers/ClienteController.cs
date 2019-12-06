@@ -15,7 +15,7 @@ namespace RoleTopMVC.Controllers
        
         [HttpGet]
         public IActionResult Login()
-         {
+        {
             return View (new BaseViewModel()
             {
                 NomeView = "Login",
@@ -26,38 +26,38 @@ namespace RoleTopMVC.Controllers
         }
 
         
-          [HttpPost]
+        [HttpPost]
         public IActionResult Login(IFormCollection form)
          {
             ViewData["Action"] = "Login";
-            try {
+         
                 
                 System.Console.WriteLine (form["email"]);
                 System.Console.WriteLine (form["senha"]);
                 
 
-                var usuario = form["email"];
+                var email = form["email"];
                 var senha = form["senha"];
 
-                var cliente = clienteRepository.ObterPor(usuario);
+                var cliente = clienteRepository.ObterPor(email);
 
-                if(cliente !=null ) 
+                if(cliente != null) 
                 {
                     if(cliente.Senha.Equals(senha))
                     {
                         switch (cliente.TipoUsuario)
                         {
                             case (uint) TiposUsuario.CLIENTE:
-                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
-                             HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                             HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
-                             return RedirectToAction("Historico","Cliente");
-                       
-                          default:
-                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, usuario);
-                             HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                             HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
-                               return RedirectToAction("Dasboard","Administrador");
+                            HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, email);
+                            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                            HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
+                            return RedirectToAction("Historico","Cliente");
+                    
+                        default:
+                            HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, email);
+                            HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
+                            HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
+                                return RedirectToAction("Historico","Cliente");//return RedirectToAction("Dashboard","Administrador");
                         }
                     }
                     else
@@ -67,13 +67,10 @@ namespace RoleTopMVC.Controllers
                 } 
                 else 
                 {
-                    return View("Erro", new RespostaViewModel($"Usuário {usuario} não foi encontrado"));
+                    return View("Erro", new RespostaViewModel($"Usuário {email} não foi encontrado"));
                 }
 
-            } catch (Exception e) {
-                System.Console.WriteLine (e.StackTrace);
-                return View ("Erro");
-            }
+        
 
         }
     public IActionResult Historico()
