@@ -12,7 +12,7 @@ namespace RoleTopMVC.Controllers
          
          protected string ObterUsuarioSession()
       {
-           var email = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);//onde voce guarda valores string 
+           var email = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
            if (!string.IsNullOrEmpty(email))
            {
                return email;
@@ -25,7 +25,7 @@ namespace RoleTopMVC.Controllers
       protected string ObterUsuarioNomeSession()
       {
            var nome = HttpContext.Session.GetString(SESSION_CLIENTE_NOME);
-           if (!string.IsNullOrEmpty(nome))// se o cliente for diferente de nulo, retornará cliente 
+           if (!string.IsNullOrEmpty(nome))
            {
                return nome;
            }
@@ -37,7 +37,7 @@ namespace RoleTopMVC.Controllers
       protected string ObterUsuarioTipoSession()
       {
            var tipoUsuario = HttpContext.Session.GetString(SESSION_TIPO_USUARIO);
-           if (!string.IsNullOrEmpty(tipoUsuario))// se o cliente for diferente de nulo, retornará cliente 
+           if (!string.IsNullOrEmpty(tipoUsuario))
            {
                return tipoUsuario;
            }

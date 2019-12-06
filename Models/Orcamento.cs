@@ -19,6 +19,7 @@ namespace RoleTopMVC.Models
             this.Cliente = new Cliente();
             this.Id = 0;
             this.Status = (uint) StatusOrcamento.PENDENTE;
+            this.Observacoes  = Observacoes;
         }
     }
 }

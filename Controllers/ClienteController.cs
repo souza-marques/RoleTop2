@@ -14,7 +14,8 @@ namespace RoleTopMVC.Controllers
          private OrcamentoRepository orcamentoRepository = new OrcamentoRepository();
        
         [HttpGet]
-        public IActionResult Login () {
+        public IActionResult Login()
+         {
             return View (new BaseViewModel()
             {
                 NomeView = "Login",
@@ -26,7 +27,8 @@ namespace RoleTopMVC.Controllers
 
         
           [HttpPost]
-        public IActionResult Login (IFormCollection form) {
+        public IActionResult Login(IFormCollection form)
+         {
             ViewData["Action"] = "Login";
             try {
                 
@@ -65,7 +67,7 @@ namespace RoleTopMVC.Controllers
                 } 
                 else 
                 {
-                    return View("Erro", new RespostaViewModel($"Usuário {usuario} não foi encontrado"));// criando objeto sem guardá-lo ao "clientecontroller"
+                    return View("Erro", new RespostaViewModel($"Usuário {usuario} não foi encontrado"));
                 }
 
             } catch (Exception e) {
@@ -76,13 +78,13 @@ namespace RoleTopMVC.Controllers
         }
     public IActionResult Historico()
         {
-            var emailCliente = ObterUsuarioSession();
+            var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
             var orcamentos = orcamentoRepository.ObterTodosPorCliente(emailCliente);
 
             return View(new HistoricoViewModel()
             {
             Orcamentos = orcamentos,
-            NomeView = "Histórico",
+            NomeView = "Historico",
             UsuarioNome = ObterUsuarioNomeSession(),
             UsuarioEmail = ObterUsuarioSession()
 

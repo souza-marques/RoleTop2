@@ -27,8 +27,8 @@ namespace RoleTopMVC.Controllers
             orcamento.NomeView = "Orcamento";
             orcamento.UsuarioEmail = ObterUsuarioSession();
             orcamento.UsuarioNome = ObterUsuarioNomeSession();
-           return View(orcamento);
-           
+           return View (orcamento);
+        
        }
        
        
