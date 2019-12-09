@@ -1,6 +1,11 @@
- id=1;status_orcamento=0;cliente_nome=;cliente_documento=;cliente_email=;nome_evento=;data_evento=05/12/2019 10:33:53;quantidade=0;observacoes=
- id=2;status_orcamento=0;cliente_nome=;cliente_documento=;cliente_email=;nome_evento=;data_evento=05/12/2019 12:41:09;quantidade=0;observacoes=
- id=3;status_orcamento=0;cliente_nome=;cliente_documento=;cliente_email=;nome_evento=;data_evento=05/12/2019 12:45:24;quantidade=0;observacoes=
- id=4;status_orcamento=0;cliente_nome=;cliente_documento=;cliente_email=;nome_evento=;data_evento=06/12/2019 08:18:25;quantidade=0;observacoes=
- id=5;status_orcamento=0;cliente_nome=;cliente_documento=;cliente_email=;nome_evento=;data_evento=06/12/2019 08:58:55;quantidade=0;observacoes=
- id=6;status_orcamento=0;cliente_nome=;cliente_documento=;cliente_email=;nome_evento=;data_evento=06/12/2019 11:11:28;quantidade=0;observacoes=
+ id=1;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=06/09/2024 00:00:00;observacoes=bb
+ id=2;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bovy;tipo-evento=casamento;quantidade=400;dataevento=09/02/2019 00:00:00;observacoes=123456
+ id=3;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=25/06/2022 00:00:00;observacoes=não haverá servicos
+ id=4;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=25/06/2022 00:00:00;observacoes=não haverá servicos
+ id=5;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=25/06/2022 00:00:00;observacoes=não haverá servicos
+ id=6;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=qwddewqf;tipo-evento=sdujy;quantidade=8000;dataevento=07/09/2023 00:00:00;observacoes=legal kk
+ id=7;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=qwddewqf;tipo-evento=sdujy;quantidade=8000;dataevento=07/09/2023 00:00:00;observacoes=legal kk
+ id=8;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=p@p.com;nome-evento=bb;tipo-evento=faef;quantidade=800;dataevento=09/01/2019 00:00:00;observacoes=não haverá servicos
+ id=9;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=matheus@gmail.com;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=01/08/2030 00:00:00;observacoes=123456
+ id=10;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=matheus@gmail.com;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=01/08/2030 00:00:00;observacoes=123456
+ id=11;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=matheus@gmail.com;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=01/08/2030 00:00:00;observacoes=123456

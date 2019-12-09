@@ -38,12 +38,14 @@ namespace RoleTopMVC.Repositories
                          orcamento.Id = ulong.Parse(ExtrairValorDoCampo("id",linha));
                          orcamento.Status = uint.Parse(ExtrairValorDoCampo("status_orcamento", linha));
                          orcamento.Cliente.Nome = ExtrairValorDoCampo("cliente_nome", linha);
-                         orcamento.Cliente.Cpf = ExtrairValorDoCampo("cliente_documento",linha);
+                         orcamento.Cliente.Cpf = ExtrairValorDoCampo("cliente_cpf",linha);
                          orcamento.Cliente.Email = ExtrairValorDoCampo("cliente_email", linha);
-
-                         orcamento.Nome_evento = ExtrairValorDoCampo("nome_evento",linha);
-                         orcamento.Dataevento = DateTime.Parse(ExtrairValorDoCampo("data_evento",linha));
-                         orcamento.Quantidade = int.Parse(ExtrairValorDoCampo("quantidade", linha));
+                        
+                            
+                         orcamento.Nome_evento = ExtrairValorDoCampo("nome-evento",linha);
+                         orcamento.Tipo_evento = ExtrairValorDoCampo("tipo-evento",linha);
+                         orcamento.Quantidade = uint.Parse(ExtrairValorDoCampo("quantidade", linha));
+                         orcamento.Dataevento = DateTime.Parse(ExtrairValorDoCampo("dataevento",linha));
                          orcamento.Observacoes = ExtrairValorDoCampo("observacoes", linha);
                         
                          
@@ -84,7 +86,7 @@ namespace RoleTopMVC.Repositories
             {
                 Cliente cliente = orcamento.Cliente;
                
-                return $" id={orcamento.Id};status_orcamento={orcamento.Status};cliente_nome={cliente.Nome};cliente_documento={cliente.Cpf};cliente_email={cliente.Email};nome_evento={orcamento.Nome_evento};data_evento={orcamento.Dataevento};quantidade={orcamento.Quantidade};observacoes={orcamento.Observacoes}";
+                return $" id={orcamento.Id};status_orcamento={orcamento.Status};cliente_nome={cliente.Nome};cliente_cpf={cliente.Cpf};cliente_email={cliente.Email};nome-evento={orcamento.Nome_evento};tipo-evento={orcamento.Tipo_evento};quantidade={orcamento.Quantidade};dataevento={orcamento.Dataevento};observacoes={orcamento.Observacoes}";
             }
 
              public bool Atualizar(ulong id, Orcamento orcamento)
