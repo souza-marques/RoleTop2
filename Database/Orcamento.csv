@@ -1,11 +1,5 @@
- id=1;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=06/09/2024 00:00:00;observacoes=bb
- id=2;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bovy;tipo-evento=casamento;quantidade=400;dataevento=09/02/2019 00:00:00;observacoes=123456
- id=3;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=25/06/2022 00:00:00;observacoes=não haverá servicos
- id=4;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=25/06/2022 00:00:00;observacoes=não haverá servicos
- id=5;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=25/06/2022 00:00:00;observacoes=não haverá servicos
- id=6;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=qwddewqf;tipo-evento=sdujy;quantidade=8000;dataevento=07/09/2023 00:00:00;observacoes=legal kk
- id=7;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=;nome-evento=qwddewqf;tipo-evento=sdujy;quantidade=8000;dataevento=07/09/2023 00:00:00;observacoes=legal kk
- id=8;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=p@p.com;nome-evento=bb;tipo-evento=faef;quantidade=800;dataevento=09/01/2019 00:00:00;observacoes=não haverá servicos
- id=9;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=matheus@gmail.com;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=01/08/2030 00:00:00;observacoes=123456
- id=10;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=matheus@gmail.com;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=01/08/2030 00:00:00;observacoes=123456
- id=11;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=matheus@gmail.com;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=01/08/2030 00:00:00;observacoes=123456
+ id=1;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=j@j.com;nome-evento=olá;tipo-evento=varzea;quantidade=400;dataevento=06/07/2020 00:00:00;observacoes=sabersaber
+ id=2;status_orcamento=0;cliente_nome=poioi;cliente_cpf=52243626;cliente_email=m@m.com;nome-evento=dknfrhiea;tipo-evento=aeufgewiufg;quantidade=400;dataevento=07/06/2024 00:00:00;observacoes=oioi
+ id=3;status_orcamento=0;cliente_nome=poioi;cliente_cpf=52243626;cliente_email=m@m.com;nome-evento=dknfrhiea;tipo-evento=aeufgewiufg;quantidade=400;dataevento=07/06/2024 00:00:00;observacoes=oioi
+ id=4;status_orcamento=0;cliente_nome=poioi;cliente_cpf=52243626;cliente_email=m@m.com;nome-evento=dknfrhiea;tipo-evento=aeufgewiufg;quantidade=400;dataevento=07/06/2024 00:00:00;observacoes=oioi
+ id=5;status_orcamento=0;cliente_nome=poioi;cliente_cpf=52243626;cliente_email=m@m.com;nome-evento=dknfrhiea;tipo-evento=aeufgewiufg;quantidade=400;dataevento=07/06/2024 00:00:00;observacoes=oioi

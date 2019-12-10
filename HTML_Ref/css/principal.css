@@ -66,7 +66,6 @@
   ***********************************************************************/
   #logo-area  img { background-image: url(img/fundo_logo.jpg);
     width: 100%;
-    
   }
   #logo-area h2 {color: #ff9933;
     text-shadow: -2px -2px 0 #ffc600,

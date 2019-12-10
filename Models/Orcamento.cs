@@ -8,7 +8,6 @@ namespace RoleTopMVC.Models
         public ulong Id {get;set;}
         public Cliente Cliente {get;set;}
         public uint Status {get;set;}
-        public string Nome_pessoa{get;set;}
         public string Nome_evento {get;set;}
         public string Tipo_evento {get;set;}
         public uint Quantidade {get;set;}
