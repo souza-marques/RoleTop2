@@ -5,6 +5,11 @@
     max-width: 100%;
 }
 
+h2 {
+  text-align: -webkit-center;
+  color: #ffc600;
+}
+
 #logo-area img {
   max-width: 100%;
 }

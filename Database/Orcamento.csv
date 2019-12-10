@@ -1,5 +1,3 @@
- id=1;status_orcamento=0;cliente_nome=;cliente_cpf=;cliente_email=j@j.com;nome-evento=olá;tipo-evento=varzea;quantidade=400;dataevento=06/07/2020 00:00:00;observacoes=sabersaber
- id=2;status_orcamento=0;cliente_nome=poioi;cliente_cpf=52243626;cliente_email=m@m.com;nome-evento=dknfrhiea;tipo-evento=aeufgewiufg;quantidade=400;dataevento=07/06/2024 00:00:00;observacoes=oioi
- id=3;status_orcamento=0;cliente_nome=poioi;cliente_cpf=52243626;cliente_email=m@m.com;nome-evento=dknfrhiea;tipo-evento=aeufgewiufg;quantidade=400;dataevento=07/06/2024 00:00:00;observacoes=oioi
- id=4;status_orcamento=0;cliente_nome=poioi;cliente_cpf=52243626;cliente_email=m@m.com;nome-evento=dknfrhiea;tipo-evento=aeufgewiufg;quantidade=400;dataevento=07/06/2024 00:00:00;observacoes=oioi
- id=5;status_orcamento=0;cliente_nome=poioi;cliente_cpf=52243626;cliente_email=m@m.com;nome-evento=dknfrhiea;tipo-evento=aeufgewiufg;quantidade=400;dataevento=07/06/2024 00:00:00;observacoes=oioi
+ id=1;status_orcamento=0;cliente_nome=Matheus;cliente_cpf=5524582;cliente_email=p@p.com;nome-evento=bb;tipo-evento=guga;quantidade=800;dataevento=01/06/2024 00:00:00;observacoes=qwewe
+ id=2;status_orcamento=0;cliente_nome=Matheus;cliente_cpf=55258247520;cliente_email=p@p.com;nome-evento=pipi´s evento;tipo-evento=nothing;quantidade=250;dataevento=08/09/2024 00:00:00;observacoes=ola
+ id=3;status_orcamento=0;cliente_nome=Matheus;cliente_cpf=55258247520;cliente_email=matheus@gmail.com;nome-evento=bb;tipo-evento=guga;quantidade=qesxdeqawe.;dataevento=18/12/2019 00:00:00;observacoes=123456;servicos=luz;forma-pagamento=boleto;

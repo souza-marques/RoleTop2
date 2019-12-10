@@ -44,9 +44,11 @@ namespace RoleTopMVC.Repositories
                             
                          orcamento.Nome_evento = ExtrairValorDoCampo("nome-evento",linha);
                          orcamento.Tipo_evento = ExtrairValorDoCampo("tipo-evento",linha);
-                         orcamento.Quantidade = uint.Parse(ExtrairValorDoCampo("quantidade", linha));
+                         orcamento.Quantidade = ExtrairValorDoCampo("quantidade", linha);
                          orcamento.Dataevento = DateTime.Parse(ExtrairValorDoCampo("dataevento",linha));
                          orcamento.Observacoes = ExtrairValorDoCampo("observacoes", linha);
+                         orcamento.Servicos = ExtrairValorDoCampo("servicos", linha);
+                         orcamento.Forma_Pagamento = ExtrairValorDoCampo("forma-pagamento",linha);
                         
                          
                          orcamentos.Add(orcamento);
@@ -86,7 +88,7 @@ namespace RoleTopMVC.Repositories
             {
                 Cliente cliente = orcamento.Cliente;
                
-                return $" id={orcamento.Id};status_orcamento={orcamento.Status};cliente_nome={cliente.Nome};cliente_cpf={cliente.Cpf};cliente_email={cliente.Email};nome-evento={orcamento.Nome_evento};tipo-evento={orcamento.Tipo_evento};quantidade={orcamento.Quantidade};dataevento={orcamento.Dataevento};observacoes={orcamento.Observacoes}";
+                return $" id={orcamento.Id};status_orcamento={orcamento.Status};cliente_nome={cliente.Nome};cliente_cpf={cliente.Cpf};cliente_email={cliente.Email};nome-evento={orcamento.Nome_evento};tipo-evento={orcamento.Tipo_evento};quantidade={orcamento.Quantidade};dataevento={orcamento.Dataevento};observacoes={orcamento.Observacoes};servicos={orcamento.Servicos};forma-pagamento={orcamento.Forma_Pagamento};";
             }
 
              public bool Atualizar(ulong id, Orcamento orcamento)

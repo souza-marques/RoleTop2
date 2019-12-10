@@ -50,10 +50,13 @@ namespace RoleTopMVC.Controllers
               orcamento.Cliente.Cpf = form["cpf-pessoa"];
               orcamento.Nome_evento = form["nome-evento"];
               orcamento.Tipo_evento = form["tipo-evento"];
-              orcamento.Quantidade = uint.Parse(form["quantidade"]);
+              orcamento.Quantidade = form["quantidade"];
               orcamento.Dataevento = DateTime.Parse(form["dataevento"]);
               orcamento.Cliente.Email = form["email"];
               orcamento.Observacoes = form["observacoes"];
+              orcamento.Servicos = form["servicos"];
+              orcamento.Forma_Pagamento = form["forma-pagamento"];
+              
 
 
 

@@ -9,7 +9,9 @@
     <table>
         <thead>
             <tr>
+                <td>Quantidade de Pessoas</td>
                 <th>Data do Evento</th>
+                <th>Tipo de Evento</th>
                 <th>Nome do Evento</th>
             
             </tr>
@@ -17,8 +19,9 @@
         <tbody>
             @foreach ( var orcamento in Model.Orcamentos){
                 <tr>
-
+                  <td>@orcamento.Quantidade</td>
                   <td>@orcamento.Dataevento</td>
+                  <td>@orcamento.Tipo_evento</td>
                     <td>@orcamento.Nome_evento</td>
                 </tr>
             }
