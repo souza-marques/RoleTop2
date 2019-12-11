@@ -83,25 +83,17 @@ namespace RoleTopMVC.Repositories
                 }
                     return null;
             }
-
-             private string PrepararRegistroCSV(Orcamento orcamento)
-            {
-                Cliente cliente = orcamento.Cliente;
-               
-                return $" id={orcamento.Id};status_orcamento={orcamento.Status};cliente_nome={cliente.Nome};cliente_cpf={cliente.Cpf};cliente_email={cliente.Email};nome-evento={orcamento.Nome_evento};tipo-evento={orcamento.Tipo_evento};quantidade={orcamento.Quantidade};dataevento={orcamento.Dataevento};observacoes={orcamento.Observacoes};servicos={orcamento.Servicos};forma-pagamento={orcamento.Forma_Pagamento};";
-            }
-
-             public bool Atualizar(ulong id, Orcamento orcamento)
+                public bool Atualizar(ulong id, Orcamento orcamento)
             {
                var orcamentosTotais =  File.ReadAllLines(PATH);
                var orcamentoCSV = PrepararRegistroCSV(orcamento);
-               var linhaOrcamento = -1; // linha que serve para inicializar, começa em 0 na verdade.
+               var linhaOrcamento = -1; 
                var resultado = false;
 
                for (int i = 0; i < orcamentosTotais.Length; i++)
                 {
                     var idConvertido = ulong.Parse(ExtrairValorDoCampo("id", orcamentosTotais[i]));
-                    if(orcamento.Id.Equals(idConvertido))//compara o id do pedido com o id da linha e quando for igual, ele pega a informação nova e reescreve o arquivo 
+                    if(orcamento.Id.Equals(idConvertido)) 
                     {
                         linhaOrcamento = i;
                         resultado = true;
@@ -117,6 +109,14 @@ namespace RoleTopMVC.Repositories
                return resultado;
             }
 
+             private string PrepararRegistroCSV(Orcamento orcamento)
+            {
+                Cliente cliente = orcamento.Cliente;
+               
+                return $" id={orcamento.Id};status_orcamento={orcamento.Status};cliente_nome={cliente.Nome};cliente_cpf={cliente.Cpf};cliente_email={cliente.Email};nome-evento={orcamento.Nome_evento};tipo-evento={orcamento.Tipo_evento};quantidade={orcamento.Quantidade};dataevento={orcamento.Dataevento};observacoes={orcamento.Observacoes};servicos={orcamento.Servicos};forma-pagamento={orcamento.Forma_Pagamento};";
+            }
+
+             
 
 
                    

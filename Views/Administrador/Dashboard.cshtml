@@ -1,4 +1,4 @@
- 
+@model RoleTopMVC.ViewModels.DashboardViewModel 
   <main>
         <h2>Dashboard</h2>
 
@@ -7,15 +7,15 @@
             <div id="painel">
                 <div class="box-status-pedidos aprovados">
                     <h4>Aprovados</h4>
-                    <p>3</p>
+                    <p>@Model.OrcamentosAprovados</p>
                 </div>
                 <div class="box-status-pedidos pendentes">
                     <h4>Pendentes</h4>
-                    <p>3</p>
+                    <p>@Model.OrcamentosPendentes
                 </div>
                 <div class="box-status-pedidos reprovados">
                     <h4>Reprovados</h4>
-                    <p>3</p>
+                    <p>@Model.OrcamentosReprovados</p>
                 </div>
             </div>
         </section>
@@ -25,9 +25,9 @@
             <table>
                 <thead>
                     <tr>
-                        <th rowspan="2">Nome do cliente</th>
+                        <th rowspan="2">Data do Evento</th>
                         <th rowspan="2">Nome do Evento</th>
-                        <th colspan="2">Informações</th>
+                        <th colspan="2">Quantidade de Pessoas</th>
                         <th colspan="2" rowspan="2">Aprovar</th>
                     </tr>
                     <tr>
@@ -40,27 +40,22 @@
                 <tfoot>
                     <tr>
                         <td colspan="6">
-                            <p>Pedidos atualizados em 11/09/2019 ás 01:05</p>
+                            <p>Eventos atualizados em @DateTime.Now</p>
                         </td>
                     </tr>
                 </tfoot>
                 <tbody>
-                    <tr>
-                        <td>Cesar Sportore</td>
-                        <td>Cesar casamento</td>
-                        <td>Casamento</td>
-                        <td> 200 convidados</td>
-                        <td><a href="#"><i class="fas fa-check"></i></a></td>
-                        <td><a href="#"><i class="fas fa-times"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>Roberta Silva</td>
-                        <td>halloween party</td>
-                        <td>Balada</td>
-                        <td>300 convidados</td>
-                        <td><a href="#"><i class="fas fa-check"></i></a></td>
-                        <td><a href="#"><i class="fas fa-times"></i></a></td>
-                    </tr>
+                      @foreach(var orcamento in Model.Orcamentos )
+                    {
+                        <tr>
+                            <td>@orcamento.Dataevento</td>
+                            <td>@orcamento.Nome_evento</td>
+                            <td>@orcamento.Quantidade</td>
+                            
+                            <td><a href='@Url.Action("Aprovar", "Orcamento", new {id = @orcamento.Id})'><i class="fas fa-check"></i></a></td>
+                            <td><a href='@Url.Action("Reprovar", "Orcamento", new {id = @orcamento.Id})'><i class="fas fa-times"></i></a></td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </section>

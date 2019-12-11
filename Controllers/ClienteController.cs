@@ -50,14 +50,14 @@ namespace RoleTopMVC.Controllers
                             case (uint) TiposUsuario.CLIENTE:
                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, email);
                             HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                            HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
+                            HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
                             return RedirectToAction("Historico","Cliente");
                     
                         default:
                             HttpContext.Session.SetString(SESSION_CLIENTE_EMAIL, email);
                             HttpContext.Session.SetString(SESSION_CLIENTE_NOME, cliente.Nome);
-                            HttpContext.Session.SetString(SESSION_TIPO_USUARIO, cliente.TipoUsuario.ToString());
-                                return RedirectToAction("Historico","Cliente");//return RedirectToAction("Dashboard","Administrador");
+                            HttpContext.Session.SetString(SESSION_CLIENTE_TIPO, cliente.TipoUsuario.ToString());
+                                return  RedirectToAction("Dashboard","Administrador");
                         }
                     }
                     else
@@ -75,15 +75,15 @@ namespace RoleTopMVC.Controllers
         }
     public IActionResult Historico()
         {
-            var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
-            var orcamentos = orcamentoRepository.ObterTodosPorCliente(emailCliente);
+            var emailCliente = ObterUsuarioNomeSession();
+            var orcamentosCliente = orcamentoRepository.ObterTodosPorCliente(emailCliente);
 
             return View(new HistoricoViewModel()
             {
-            Orcamentos = orcamentos,
+            Orcamentos = orcamentosCliente,
             NomeView = "Historico",
-            UsuarioNome = ObterUsuarioNomeSession(),
-            UsuarioEmail = ObterUsuarioSession()
+            UsuarioEmail = ObterUsuarioSession(),
+            UsuarioNome = ObterUsuarioNomeSession()
 
             });
         }

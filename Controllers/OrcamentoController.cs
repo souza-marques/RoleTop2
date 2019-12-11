@@ -1,6 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoleTopMVC.Enums;
 using RoleTopMVC.Models;
 using RoleTopMVC.Repositories;
 using RoleTopMVC.ViewModels;
@@ -19,7 +20,6 @@ namespace RoleTopMVC.Controllers
            OrcamentoViewModel orcamento = new OrcamentoViewModel();
 
             var usuarioLogado = ObterUsuarioSession();
-
             var clienteLogado = clienteRepository.ObterPor(usuarioLogado);
             if(clienteLogado != null)
             {
@@ -78,6 +78,47 @@ namespace RoleTopMVC.Controllers
                     UsuarioNome = ObterUsuarioNomeSession()
                 });
             }
+        }
+        public IActionResult Aprovar(ulong id)
+        {
+            var orcamento = orcamentoRepository.ObterPor(id);
+            orcamento.Status = (uint) StatusOrcamento.APROVADO;
+
+            if(orcamentoRepository.Atualizar(id,orcamento))
+            {
+                return RedirectToAction("Dashboard", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel("Não foi possível aprovar este pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+
+        }
+
+          public IActionResult Reprovar(ulong id)
+        {
+            var orcamento = orcamentoRepository.ObterPor(id);
+            orcamento.Status = (uint) StatusOrcamento.REPROVADO;
+
+            if(orcamentoRepository.Atualizar(id,orcamento))
+            {
+                return RedirectToAction("Dashboard", "Administrador");
+            }
+            else
+            {
+                return View("Erro", new RespostaViewModel("Não foi possível reprovar este pedido")
+                {
+                    NomeView = "Dashboard",
+                    UsuarioEmail = ObterUsuarioSession(),
+                    UsuarioNome = ObterUsuarioNomeSession()
+                });
+            }
+
         }
    
     }
