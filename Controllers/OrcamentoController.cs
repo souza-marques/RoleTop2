@@ -81,7 +81,7 @@ namespace RoleTopMVC.Controllers
         }
         public IActionResult Aprovar(ulong id)
         {
-            var orcamento = orcamentoRepository.ObterPor(id);
+            Orcamento orcamento = orcamentoRepository.ObterPor(id);
             orcamento.Status = (uint) StatusOrcamento.APROVADO;
 
             if(orcamentoRepository.Atualizar(id,orcamento))
@@ -102,7 +102,7 @@ namespace RoleTopMVC.Controllers
 
           public IActionResult Reprovar(ulong id)
         {
-            var orcamento = orcamentoRepository.ObterPor(id);
+            Orcamento orcamento = orcamentoRepository.ObterPor(id);
             orcamento.Status = (uint) StatusOrcamento.REPROVADO;
 
             if(orcamentoRepository.Atualizar(id,orcamento))

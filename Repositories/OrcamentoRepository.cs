@@ -20,13 +20,30 @@ namespace RoleTopMVC.Repositories
 
          public bool Inserir(Orcamento orcamento)
             {
-                var quantidadeLinhas = File.ReadAllLines(PATH).Length;
-                orcamento.Id = (ulong) ++quantidadeLinhas;
-                var linha = new string[] {PrepararRegistroCSV(orcamento)};
+                var quantidadeOrcamentos = File.ReadAllLines(PATH).Length;
+                orcamento.Id = (ulong) ++quantidadeOrcamentos;
+                var linha = new string[] {PrepararRegistroCSV (orcamento)};
                 File.AppendAllLines(PATH, linha);
 
                 return true;
             }
+
+
+
+                public List<Orcamento> ObterTodosPorCliente(string email)
+                {
+                    var orcamentos = ObterTodos();
+                    List<Orcamento> orcamentosCliente = new List<Orcamento>();
+
+                    foreach (var orcamento in orcamentos)
+                    {
+                        if(orcamento.Cliente.Email.Equals(email))
+                        {
+                            orcamentosCliente.Add(orcamento);
+                        }
+                    }
+                    return orcamentosCliente;
+                }
 
           public List<Orcamento> ObterTodos()
                 {
@@ -56,20 +73,7 @@ namespace RoleTopMVC.Repositories
                      return orcamentos;
                 }
 
-                public List<Orcamento> ObterTodosPorCliente(string email)
-                {
-                    var orcamentosTotais = ObterTodos();
-                    List<Orcamento> orcamentosCliente = new List<Orcamento>();
-
-                    foreach (var orcamento in orcamentosTotais)
-                    {
-                        if(orcamento.Cliente.Email.Equals(email))
-                        {
-                            orcamentosCliente.Add(orcamento);
-                        }
-                    }
-                    return orcamentosCliente;
-                }
+                
 
                  public Orcamento ObterPor(ulong id)
             {
@@ -83,7 +87,7 @@ namespace RoleTopMVC.Repositories
                 }
                     return null;
             }
-                public bool Atualizar(ulong id, Orcamento orcamento)
+                public bool Atualizar(ulong id,Orcamento orcamento)
             {
                var orcamentosTotais =  File.ReadAllLines(PATH);
                var orcamentoCSV = PrepararRegistroCSV(orcamento);

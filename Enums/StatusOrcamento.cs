@@ -4,6 +4,6 @@ namespace RoleTopMVC.Enums
     {
         PENDENTE = 0,
         APROVADO = 1,
-        REPROVADO = 2,
+        REPROVADO = 2
     }
 }

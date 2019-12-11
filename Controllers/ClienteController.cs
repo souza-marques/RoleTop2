@@ -30,8 +30,9 @@ namespace RoleTopMVC.Controllers
         public IActionResult Login(IFormCollection form)
          {
             ViewData["Action"] = "Login";
-         
-                
+
+            try
+            {
                 System.Console.WriteLine (form["email"]);
                 System.Console.WriteLine (form["senha"]);
                 
@@ -69,13 +70,18 @@ namespace RoleTopMVC.Controllers
                 {
                     return View("Erro", new RespostaViewModel($"Usuário {email} não foi encontrado"));
                 }
-
+            } catch (Exception e) 
+            {
+                System.Console.WriteLine(e.StackTrace);
+                return View("Erro");
+            }
+                
         
 
         }
     public IActionResult Historico()
         {
-            var emailCliente = ObterUsuarioNomeSession();
+            var emailCliente = HttpContext.Session.GetString(SESSION_CLIENTE_EMAIL);
             var orcamentosCliente = orcamentoRepository.ObterTodosPorCliente(emailCliente);
 
             return View(new HistoricoViewModel()

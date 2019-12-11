@@ -10,12 +10,12 @@
                                 <div>
                                     <label for="nome-cliente">Nome completo:</label>
                                     <br>
-                                    <input id="nomeCliente" type="text" name="nome-pessoa" required>
+                                    <input id="nomeCliente" type="text" name="nome-pessoa"  value="@Model.Cliente.Nome" required>
                                 </div>
                                 <div>
                                     <label for="cpf-cliente">CPF:</label>
                                     <br>
-                                    <input id="cpf" type="text" name="cpf-pessoa">
+                                    <input id="cpf" type="text" name="cpf-pessoa" value="@Model.Cliente.Cpf">
                                 </div>
                                 <div>
                                     <label for="Nome do evento"> Nome do Evento:</label>
@@ -41,7 +41,7 @@
                                 <div>
                                     <label for="E-mail">E-mail:</label>
                                     <br>
-                                    <input id="email" type="email" name="email">
+                                    <input id="email" type="email" name="email" value="@Model.Cliente.Email">
                                 </div>
                                
                                 <div>
@@ -55,9 +55,9 @@
                                     <h3>Serviços</h3>
                                   <select name="servicos">
                                     <option value="selecione"disabled selected>Selecione</option>
-                                    <option value="serviço de audio">Serviço de áudio</option>
-                                    <option value="serviço de iluminação">Serviço de iluminação</option>
-                                    <option value="audio e iluminação">Serviço de áudio e iluminação</option>
+                                    <option value="áudio">Serviço de áudio</option>
+                                    <option value="iluminação">Serviço de iluminação</option>
+                                    <option value="áudio e iluminação">Serviço de áudio e iluminação</option>
                                     <option>Nenhum</option>
                                   </select>
                                 </div> 
@@ -68,8 +68,8 @@
                                 <select name="forma-pagamento" required>
                                     <br>
                               <option value="selecione" disabled selected>Selecione</option>
-                              <option value="cartao">Cartão de Crédito</option>
-                              <option value="boleto">Boleto Bancário</option>
+                              <option value="cartao de crédito">Cartão de Crédito</option>
+                              <option value="boleto bancario">Boleto Bancário</option>
                               <option value="transferencia">Transferência</option>
                           </select>
                             <br>

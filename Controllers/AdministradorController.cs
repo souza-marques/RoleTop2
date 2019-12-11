@@ -3,19 +3,21 @@ using RoleTopMVC.ViewModels;
 using RoleTopMVC.Controllers;
 using RoleTopMVC.Enums;
 using RoleTopMVC.Repositories;
+using System;
 
-
-namespace RoleTop2.Controllers
+namespace RoleTopMVC.Controllers
 {
     public class AdministradorController : AbstractController
     {
         OrcamentoRepository orcamentoRepository = new OrcamentoRepository();
+        [HttpGet]
         public IActionResult Dashboard () {
+            try{
 
-            var ninguemLogado = string.IsNullOrEmpty(ObterUsuarioTipoSession());
 
-            if (!ninguemLogado && 
-            (uint) TiposUsuario.ADMINISTRADOR == uint.Parse(ObterUsuarioTipoSession())) {
+            var tipoUsuarioSessao = uint.Parse(ObterUsuarioTipoSession());
+            if(tipoUsuarioSessao.Equals((uint)TiposUsuario.ADMINISTRADOR))
+            {
 
                 var orcamentos = orcamentoRepository.ObterTodos ();
                 DashboardViewModel dashboardViewModel = new DashboardViewModel ();
@@ -46,6 +48,15 @@ namespace RoleTop2.Controllers
                     Mensagem = "Você não tem permissão para acessar o Dashboard"
                 });
 
+            }
+            } catch (Exception e)
+            {
+                    System.Console.WriteLine(e.StackTrace);
+                    return View("Erro", new RespostaViewModel()
+                    {
+                            NomeView = "Dashboard",
+                            Mensagem = "O tempo de aprovação de eventos se esgotou"
+                    });
             }
         }
     }

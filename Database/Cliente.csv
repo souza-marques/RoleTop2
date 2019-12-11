@@ -1,9 +1,3 @@
-tipo_usuario=0;nome=Administrador;cpf=;senha=123123;email=admin@email.com
-nome=Pablo;cpf=;senha=123456;email=p@p.com
-nome=Pablito;cpf=;senha=123456;email=flaviado@email
-nome=;cpf=;senha=;email=flaviado@email
-nome=Matheus ;cpf=;senha=123456;email=mm@email.com
-nome=Flavio;cpf=;senha=123456;email=flavio@email.com
-nome=Matheus ;cpf=;senha=313243;email=m@m.com
-nome=Matheus ;cpf=52450072829;senha=123456;email=pimba@gmail.com
-nome=José medeiros da silva;cpf=55258242520;senha=123456;email=jose@email.com
+tipo_usuario=1;nome=Admin;cpf=231545;senha=123456;email=admin@email.com
+tipo_usuario=0;nome=Matheus;cpf=231545;senha=123456;email=matheus@gmail.com
+tipo_usuario=0;nome=Flavio;cpf=54325345;senha=123456;email=flavio@email.com
