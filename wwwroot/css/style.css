@@ -8,6 +8,11 @@ body{
     background-color: #7d0093;
 }
 
+#mensagem {
+    font-size: 1.5em;
+    text-align: center;
+}
+
 i{
   color: #ffc600;
 }

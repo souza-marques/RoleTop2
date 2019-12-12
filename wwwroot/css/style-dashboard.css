@@ -46,15 +46,15 @@ h4 {
 }
 
 .box-status-pedidos.reprovados {
-    background-color: #a70000;
+    background-color: #ffc600;
 }
 
 .box-status-pedidos.aprovados {
-    background-color: #669100;
+    background-color: #ffc600;
 }
 
 .box-status-pedidos.pendentes {
-    background-color: #ff9933;
+    background-color: #ffc600;
 }
 
 table {
@@ -67,7 +67,7 @@ table {
 }
 
 table th {
-    background-color:#a70000;
+    background-color:#361a0c;
 }
 
 table a {
@@ -82,7 +82,7 @@ table a:hover {
 tfoot td {
     text-align: center;
     color: #ff9933;
-    background-color: #a70000;
+    background-color:#361a0c;
 }
 
 thead > tr:first-child > th:last-child {

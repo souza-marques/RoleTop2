@@ -16,6 +16,7 @@ h2 {
   .section-local {
     text-align: center;
     color: #ffc600;
+    margin-top: 5%;
   }
   
   .box-serviços { 
@@ -65,7 +66,7 @@ h2 {
       color: #ffc600;
     }
     
-  
+    
   /**********************************************************************
                                   LOGO
   ***********************************************************************/
@@ -127,5 +128,26 @@ h2 {
   }
   @media(max-width: 320px){
     
-  }                 
-   
+  }        
+  
+  @media(max-width:1000px){
+    .section-local {
+      font-size: 0.9em;
+      margin-top: 15%;
+    }
+  }
+  
+  @media(max-width:700px){
+    .section-local {
+      font-size: 0.9em;
+      margin-top: 25%;
+    }
+  }
+
+  @media(max-width:500px){
+    .section-local {
+      font-size: 0.6em;
+      margin-top: 15%;
+    }
+  }
+

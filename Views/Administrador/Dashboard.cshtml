@@ -26,13 +26,13 @@
                 <thead>
                     <tr>
                         <th rowspan="2">Data do Evento</th>
-                        <th rowspan="2">Nome do Evento</th>
-                        <th colspan="2">Quantidade de Pessoas</th>
-                        <th colspan="2" rowspan="2">Aprovar</th>
+                        <th rowspan="2">Tipo de Evento</th>
+                        <th colspan="2">Evento</th>
+                        <th colspan="2" rowspan="2">Reprovar</th>
                     </tr>
                     <tr>
-                        <th>Evento</th>
-                        <th>N° de pes.</th>
+                        <th>N° de pessoas</th>
+                        <th>Aprovar</th>
                         <th></th>
                         <th></th>
                     </tr>
@@ -49,7 +49,7 @@
                     {
                         <tr>
                             <td>@orcamento.Dataevento</td>
-                            <td>@orcamento.Nome_evento</td>
+                            <td>@orcamento.Tipo_evento</td>
                             <td>@orcamento.Quantidade</td>
                             
                             <td><a href='@Url.Action("Aprovar", "Orcamento", new {id = @orcamento.Id})'><i class="fas fa-check"></i></a></td>

@@ -74,3 +74,45 @@ body {
 @media(max-width: 320px){
   
 }
+
+@media(max-width: 1000px){
+    .in-esquerda{
+        border: 1px solid #ffc600;
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media(max-width:1000){
+    .meio{
+        border: 1px solid #ffc600;
+        width: 400px;
+        height: 180px;
+    }
+}
+
+@media(max-width: 600px){
+    .meio{
+        border: 1px solid #ffc600;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media(max-width: 1000px){
+    .direita{
+        border: 1px solid #ffc600;
+        width: 500px;
+        height: 200px;
+    }
+}
+
+
+
+@media(max-width: 800px){
+    .direita{
+        border: 1px solid #ffc600;
+        width: 300px;
+        height: 200px;
+    }
+}
