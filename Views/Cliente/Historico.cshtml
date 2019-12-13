@@ -13,7 +13,7 @@
                 <th>Data do Evento</th>
                 <th>Tipo de Evento</th>
                 <th>Nome do Evento</th>
-            
+                <th>Status da reserva</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +23,17 @@
                   <td>@orcamento.Dataevento</td>
                   <td>@orcamento.Tipo_evento</td>
                     <td>@orcamento.Nome_evento</td>
+            
+            @if (@orcamento.Status == 0)
+            {
+                <td>Seu evento está em análise.</td>
+            } else if (@orcamento.Status == 1)
+            {
+                <td>Seu evento foi aprovado.</td>
+            } else if(@orcamento.Status == 2)
+            {
+                <td>Seu evento foi reprovado.</td>
+            }
                 </tr>
             }
         </tbody>

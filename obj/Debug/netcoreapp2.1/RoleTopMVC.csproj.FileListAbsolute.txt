@@ -72,3 +72,4 @@ C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.1\RoleTopMVC.pdb
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.1\RoleTopMVC.csproj.CopyComplete
 C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.1\Razor\Views\Administrador\Dashboard.g.cshtml.cs
 C:\Users\marqu\OneDrive\Documentos\RoleTop2\obj\Debug\netcoreapp2.1\Razor\Views\Administrador\Dashboard.g.cshtml.cs
+C:\Users\52450072829\Documents\RoleTopMVC\obj\Debug\netcoreapp2.1\Razor\Views\Duvidas\DuvidasFrequentes.g.cshtml.cs

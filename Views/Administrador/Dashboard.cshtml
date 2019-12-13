@@ -25,21 +25,22 @@
             <table>
                 <thead>
                     <tr>
+                        <th rowspan="2">Nome do Cliente</th>
                         <th rowspan="2">Data do Evento</th>
+                        <th rowspan="2">Serviços</th>
                         <th rowspan="2">Tipo de Evento</th>
-                        <th colspan="2">Evento</th>
-                        <th colspan="2" rowspan="2">Reprovar</th>
+                        <th rowspan="2">N° de pessoas</th>
+                        <th colspan="2" rowspan="2">Aprovar</th>
                     </tr>
                     <tr>
-                        <th>N° de pessoas</th>
-                        <th>Aprovar</th>
+
                         <th></th>
                         <th></th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <td colspan="6">
+                        <td colspan="7">
                             <p>Eventos atualizados em @DateTime.Now</p>
                         </td>
                     </tr>
@@ -48,6 +49,8 @@
                       @foreach(var orcamento in Model.Orcamentos )
                     {
                         <tr>
+                            <td>@orcamento.Cliente.Nome</td>
+                            <td>@orcamento.Servicos</td>
                             <td>@orcamento.Dataevento</td>
                             <td>@orcamento.Tipo_evento</td>
                             <td>@orcamento.Quantidade</td>

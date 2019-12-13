@@ -68,12 +68,12 @@ using RoleTopMVC.Models;
             WriteLiteral("<main>\r\n  ");
             EndContext();
             BeginContext(10, 1235, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a52dae2a8a7a40aa92e67bb4dde682b0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2ab2081d0cf4054b6da16b19a7d2708", async() => {
                 BeginContext(70, 235, true);
                 WriteLiteral("\r\n\r\n        <div class=\"galeria\">\r\n            <h1>Galeria</h1>\r\n        </div>\r\n        <br>\r\n            <div class=\"section-fotos\">\r\n\r\n                    <ul>\r\n                      <li><h3>Casamentos</h3>\r\n                        ");
                 EndContext();
                 BeginContext(305, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b7fb0bfc144247be8f874efac5f9b25d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2236914b8ab64f79abdaa38571deb123", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -92,7 +92,7 @@ using RoleTopMVC.Models;
                 WriteLiteral("\r\n                      </li>\r\n                      <li> <h3>Shows</h3>\r\n                        ");
                 EndContext();
                 BeginContext(452, 55, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c63576079398418a938277f1ecd975bb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3dae7681554b4e489cf1871dbee17279", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -111,7 +111,7 @@ using RoleTopMVC.Models;
                 WriteLiteral("\r\n                      </li>\r\n                      <li>\r\n                        <h3>Aniversários</h3>\r\n                        ");
                 EndContext();
                 BeginContext(637, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "af15cc5e4d464507a0a66c3d5d32d807", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b1df30cfb4414556aa9a8c1a5664218b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -130,7 +130,7 @@ using RoleTopMVC.Models;
                 WriteLiteral("\r\n                      </li>\r\n                      <li><h3>Workshops</h3>\r\n                        ");
                 EndContext();
                 BeginContext(792, 48, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "91caec6884ae4272b4343474bc7c3638", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "093031298b1f4d6b8733744aaed7ed9a", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -149,7 +149,7 @@ using RoleTopMVC.Models;
                 WriteLiteral("\r\n                      </li>\r\n                      <li><h3>Festas de 15 anos</h3>\r\n                        ");
                 EndContext();
                 BeginContext(949, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bc2efd379f8a40019c6c6b0c70464922", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "eff8b4616c7e4a4db084714c68f0a7c8", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -168,7 +168,7 @@ using RoleTopMVC.Models;
                 WriteLiteral("\r\n                      </li>\r\n                      <li><h3>Baladas</h3>\r\n                        ");
                 EndContext();
                 BeginContext(1108, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "920db8805cd74bb99d9eb3606ebf0247", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1a2b4c06fe8745dfb595bb4f660ec5a5", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

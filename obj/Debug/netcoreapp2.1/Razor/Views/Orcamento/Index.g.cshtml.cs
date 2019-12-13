@@ -66,7 +66,7 @@ using RoleTopMVC.Models;
             WriteLiteral("\r\n <main>  \r\n                        <h2>Faça sua Reserva!</h2>\r\n                        <br>\r\n                        <br>\r\n                        ");
             EndContext();
             BeginContext(199, 5690, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "526498faf09a4689a30bc75152acf15f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fbbb07b2065c4f8a84687f3589279c29", async() => {
                 BeginContext(265, 316, true);
                 WriteLiteral(@"
 
@@ -152,7 +152,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                                     ");
                 EndContext();
                 BeginContext(3175, 61, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "20b97a853433453b86f8ff6b011551a2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ef8e8d4dd01433195ce9271574f9bb5", async() => {
                     BeginContext(3218, 9, true);
                     WriteLiteral("Selecione");
                     EndContext();
@@ -180,7 +180,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                 WriteLiteral("\r\n                                    ");
                 EndContext();
                 BeginContext(3274, 47, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33c4cd7669254eddba3961f30030b6af", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1be82b0a8ea041d1aab7165b8968bfb3", async() => {
                     BeginContext(3296, 16, true);
                     WriteLiteral("Serviço de áudio");
                     EndContext();
@@ -202,7 +202,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                 WriteLiteral("\r\n                                    ");
                 EndContext();
                 BeginContext(3359, 57, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "81fef4648d504182b3b568a0d53e52db", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3849cc2470f34e7a94f6e7f42f862419", async() => {
                     BeginContext(3386, 21, true);
                     WriteLiteral("Serviço de iluminação");
                     EndContext();
@@ -224,7 +224,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                 WriteLiteral("\r\n                                    ");
                 EndContext();
                 BeginContext(3454, 73, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bc746521dd5643b8ace2d5045546ab5e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9241ecfd451445429647e04f345746ea", async() => {
                     BeginContext(3489, 29, true);
                     WriteLiteral("Serviço de áudio e iluminação");
                     EndContext();
@@ -246,7 +246,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                 WriteLiteral("\r\n                                    ");
                 EndContext();
                 BeginContext(3565, 23, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "24dbf08d6cc74140a0e3ff4009a2b0d8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36ee7afe2b1d45049378d8867297364a", async() => {
                     BeginContext(3573, 6, true);
                     WriteLiteral("Nenhum");
                     EndContext();
@@ -275,7 +275,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                               ");
                 EndContext();
                 BeginContext(3982, 62, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4b2cf04780b4488ba407190b48c3357", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d2868ea773fa4eca840624b0c88abdb1", async() => {
                     BeginContext(4026, 9, true);
                     WriteLiteral("Selecione");
                     EndContext();
@@ -303,7 +303,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                 WriteLiteral("\r\n                              ");
                 EndContext();
                 BeginContext(4076, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ff713d4aa434953b7196608f8770520", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "284310beb2af4632b1d85a4a3a032fbc", async() => {
                     BeginContext(4110, 17, true);
                     WriteLiteral("Cartão de Crédito");
                     EndContext();
@@ -325,7 +325,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                 WriteLiteral("\r\n                              ");
                 EndContext();
                 BeginContext(4168, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7ec942a2358e49c2a525a2a1c95fba08", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1132a95c84b94dbe99d63fcaf73c40af", async() => {
                     BeginContext(4200, 15, true);
                     WriteLiteral("Boleto Bancário");
                     EndContext();
@@ -347,7 +347,7 @@ WriteAttributeValue("", 2494, Model.Cliente.Email, 2494, 20, false);
                 WriteLiteral("\r\n                              ");
                 EndContext();
                 BeginContext(4256, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aea3e80ea70b4e75a4154a3ca8554be1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54d787673dc040378414778ef727f8be", async() => {
                     BeginContext(4286, 13, true);
                     WriteLiteral("Transferência");
                     EndContext();

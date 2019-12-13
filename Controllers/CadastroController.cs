@@ -27,7 +27,7 @@ namespace RoleTopMVC.Controllers
             try{
                    Cliente cliente = new Cliente(form["nome"], form["cpf"], form ["email"], form["senha"]);
                    clienteRepositorio.Inserir(cliente);
-                   return View("Sucesso", new RespostaViewModel("Seu cadastro foi realizado"));
+                   return View("Sucesso", new RespostaViewModel("Seu cadastro foi realizado com sucesso!"));
 
             } catch(Exception e)
             {

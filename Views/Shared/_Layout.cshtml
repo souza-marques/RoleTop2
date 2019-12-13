@@ -35,6 +35,9 @@
     }@if("Dashboard".Equals(@Model.NomeView))
     {
         <link rel="stylesheet" href="~/css/style-dashboard.css" type="text/css">
+    }@if("Duvidas".Equals(@Model.NomeView))
+    {
+          <link rel="stylesheet" href="~/css/style-css" type="text/css">
     }
 
     <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
@@ -59,6 +62,7 @@
                      
                                     </li>
                                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href='@Url.Action("Index","Home")#servicos'>Serviços</a></li>
+                                 <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Duvidas" asp-action="DuvidasFrequentes">Dúvidas Frequentes</a></li>
                                      @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
                     { <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>}
                     else

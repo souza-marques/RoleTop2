@@ -11,7 +11,30 @@ body{
 #mensagem {
     font-size: 1.5em;
     text-align: center;
+    color: #ffc600;
 }
+#mensagem2 {
+  font-size: 2.0em;
+  text-align: center;
+  color: #ffc600;
+}
+
+#duvidas h4{
+  font-size: 1.5em;
+  color: #000000;
+}
+
+#duvidas h6{
+  text-align: center;
+  font-size: 1.5em;
+  color: #000000;
+}
+
+
+#duvidas p{
+ color: #ffc600;
+}
+
 
 i{
   color: #ffc600;
